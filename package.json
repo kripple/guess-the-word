@@ -1,0 +1,41 @@
+{
+  "name": "guess-the-word",
+  "version": "0.0.0",
+  "description": "A word guessing game, built for the web.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kripple/guess-the-word.git"
+  },
+  "license": "MIT",
+  "author": "Kelly Ripple",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "postbuild": "cp docs/index.html docs/404.html",
+    "lint": "eslint . && stylelint '**/*.css' && prettier --check .",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "22.12.0",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "@typescript-eslint/eslint-plugin": "7.16.1",
+    "@typescript-eslint/parser": "7.16.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-react": "7.37.2",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "eslint-plugin-react-refresh": "0.4.14",
+    "prettier": "3.4.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "stylelint": "16.14.1",
+    "stylelint-order": "6.0.4",
+    "stylelint-prettier": "5.0.3",
+    "typescript": "5.7.3",
+    "vite": "6.0.11"
+  }
+}

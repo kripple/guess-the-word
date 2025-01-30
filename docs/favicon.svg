@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-23 -23 22 22" >
+  <path class="cyan" d="M -5,-9 -6.25,-6.25 -9,-5 -6.25,-3.75 -5,-1 -3.75,-3.75 -1,-5 -3.75,-6.25 Z" />
+  <path class="magenta" d="m -12.5,-14.5 -2.5,-5.5 -2.5,5.5 -5.5,2.5 5.5,2.5 2.5,5.5 2.5,-5.5 5.5,-2.5 z" />
+  <path class="yellow" d="M -5,-15 -3.75,-17.75 -1,-19 -3.75,-20.25 -5,-23 -6.25,-20.25 -9,-19 l 2.75,1.25 z" />
+  <style>
+    path.cyan { fill: cyan; }
+    path.magenta { fill: magenta; }
+    path.yellow { fill: yellow; }
+    @media (prefers-color-scheme: dark) {
+      path.cyan { fill: cyan; }
+      path.magenta { fill: magenta; }
+      path.yellow { fill: yellow; }
+    }
+  </style>
+</svg>
