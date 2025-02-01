@@ -1,40 +1,7 @@
 .word-data {
   display: flex;
   flex-direction: column;
-  position: relative;
-}
-
-.definitions {
-  font-size: 1.125rem;
-}
-
-:root {
-  --target-height: 0;
-}
-
-.expandable {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: -1;
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-name: expand;
-  animation-timing-function: ease-in-out;
-  overflow: hidden;
-  position: relative;
-  z-index: unset;
-}
-
-@keyframes expand {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: var(--target-height);
-  }
+  height: calc-size(auto, size);
+  overflow-y: clip;
+  transition: height 1s ease;
 }
