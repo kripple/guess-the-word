@@ -4,7 +4,6 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: flex-start;
   max-width: 600px;
   padding: 16px 24px;
@@ -18,12 +17,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  font-family: var(--font-mono);
-  font-size: var(--font-size-mono);
-  /* font-style: normal; */
-  /* font-weight: 400; */
   justify-content: center;
-  /* line-height: var(--font-size-mono); */
   margin: 0;
   padding: 20px 0;
   text-align: center;
@@ -50,7 +44,6 @@
 }
 
 .phonetic {
-  font-size: 1.25rem;
   margin-bottom: 1.25rem;
   margin-top: 0;
   opacity: 0.8;

@@ -5,9 +5,7 @@ import { Icon } from '@/components/Icon';
 import { useOnKeyDown } from '@/hooks/useOnKeyDown';
 import type { ChangeEvent } from '@/types/event';
 
-// import '@/components/theme-font-regular.css';
-// import '@/components/theme-font-italic.css';
-// import '@/components/theme-font.css';
+import '@/components/theme-fonts.css';
 import '@/components/theme.css';
 
 export function Theme({ children }: { children: ReactNode }) {

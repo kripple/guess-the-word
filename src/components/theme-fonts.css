@@ -1,0 +1,74 @@
+:root {
+  --primary-font: 'Source Serif 4';
+  --secondary-font: 'Raleway';
+  --font-mono: 'overpass-mono';
+
+  --font-px: 16;
+  --subtitle-font-px: 18;
+  --font-px-mono: 20;
+  --title-font-px: 34;
+
+  --font-unit: calc(1rem / 16);
+  --font-size: calc(var(--font-px) * var(--font-unit));
+  --font-size-mono: calc(var(--font-px-mono) * var(--font-unit));
+  --title-font-size: calc(var(--title-font-px) * var(--font-unit));
+  --subtitle-font-size: calc(var(--subtitle-font-px) * var(--font-unit));
+}
+
+.app-title,
+.app-subtitle,
+.secret-word,
+.theme-toggle-label,
+.definitions,
+.keyboard-key,
+.text {
+  font-family: var(--primary-font);
+  font-optical-sizing: auto;
+  font-size: var(--font-size);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+.part-of-speech {
+  font-style: italic;
+}
+.label {
+  font-style: bold;
+}
+
+.app-title,
+.app-subtitle,
+.secret-word {
+  text-align: center;
+}
+.app-title {
+  font-family: var(--primary-font);
+  font-size: var(--title-font-size);
+}
+.app-subtitle {
+  font-family: var(--secondary-font);
+  font-size: var(--subtitle-font-size);
+}
+.theme-toggle-label {
+  font-family: var(--secondary-font);
+  letter-spacing: 1px;
+}
+.keyboard-key,
+.secret-word {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-mono);
+}
+.phonetic {
+  font-size: var(--subtitle-font-size);
+}
+@media screen and (max-width: 300px) {
+  .app-title {
+    font-size: 10vw;
+  }
+  .app-subtitle {
+    font-size: 6vw;
+  }
+}

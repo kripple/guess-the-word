@@ -1,25 +1,21 @@
 export function Text({
   description,
   label,
-  textClass,
+  variant,
 }: {
   description?: string;
   label?: string;
-  textClass?: string;
+  variant?: string;
 }) {
   if (!description) return null;
   const optionalLabel = (
     <>
-      <strong>{label}:</strong>&nbsp;
+      <span className="label">{label}:</span>&nbsp;
     </>
   );
-  const optionalClassName = textClass
-    ? {
-        className: textClass,
-      }
-    : {};
+
   return (
-    <p {...optionalClassName}>
+    <p className={`text${variant ? ` ${variant}` : ''}`}>
       {label ? optionalLabel : null}
       {description}
     </p>
