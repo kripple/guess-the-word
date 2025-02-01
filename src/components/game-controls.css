@@ -70,3 +70,6 @@
 .keyboard-key:disabled {
   cursor: default;
 }
+.keyboard-key:disabled #new-game-button {
+  fill: var(--color-subtle);
+}
