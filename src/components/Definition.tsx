@@ -1,6 +1,8 @@
 import { Text } from '@/components/Text';
 import { useDictionaryApi } from '@/hooks/useDictionaryApi';
 
+import '@/components/definition.css';
+
 export function Definition({
   win,
   word,
