@@ -54,13 +54,15 @@ export function GameControls({
             if (letter === replay) {
               return (
                 <button
+                  aria-disabled={!disabled}
                   aria-label={letter}
                   className="keyboard-key"
+                  disabled={!disabled}
                   key={letter}
                   onClick={newGame}
                   onKeyDown={onKeyDown}
                   tabIndex={0}
-                  title="New Game"
+                  title={!disabled ? undefined : 'New Game'}
                   type="button"
                   value={letter}
                 >
