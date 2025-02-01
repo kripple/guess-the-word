@@ -1,9 +1,11 @@
 export function Text({
   description,
   label,
+  textClass,
 }: {
   description?: string;
   label?: string;
+  textClass?: string;
 }) {
   if (!description) return null;
   const optionalLabel = (
@@ -11,8 +13,13 @@ export function Text({
       <strong>{label}:</strong>&nbsp;
     </>
   );
+  const optionalClassName = textClass
+    ? {
+        className: textClass,
+      }
+    : {};
   return (
-    <p>
+    <p {...optionalClassName}>
       {label ? optionalLabel : null}
       {description}
     </p>
