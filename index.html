@@ -14,6 +14,29 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <title>Guess the Word</title>
+    <script>
+      (function () {
+        function storageAvailable(type) {
+          try {
+            const storage = window[type];
+            const testKey = '__temp';
+            storage.setItem(testKey, testKey);
+            storage.removeItem(testKey);
+            return true;
+          } catch (error) {
+            return false;
+          }
+        }
+        function getItem(key) {
+          return storageAvailable('localStorage') && localStorage.getItem(key);
+        }
+        if (getItem('guessTheWordTheme') === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
