@@ -1,0 +1,63 @@
+.word-card {
+  background-color: var(--card-color);
+  border: 1px solid var(--color-subtle);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 600px;
+  max-width: 600px;
+  min-height: 6.25rem; /* 100px */
+  padding: 16px 24px;
+}
+
+.word {
+  color: var(--title-color);
+}
+
+.secret-word {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-mono);
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  justify-content: center;
+  /* line-height: var(--font-size-mono); */
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.letter,
+.unknown-letter {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: var(--font-size-mono);
+  justify-content: center;
+  margin: 6px;
+  text-transform: uppercase;
+  width: var(--font-size-mono);
+}
+
+.unknown-letter {
+  background-color: var(--text-color);
+  border-radius: 50%;
+  opacity: 0.4;
+  transform: scale(0.4);
+  transform-origin: center;
+}
+
+.phonetic {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+.definitions {
+  font-size: 1.125rem;
+}

@@ -1,3 +1,39 @@
+.app-title,
+.app-subtitle {
+  /* font-optical-sizing: auto;
+  font-style: normal; */
+  text-align: center;
+}
+
 .app-title {
   color: var(--title-color);
+  font-family: var(--primary-font);
+  /* font-optical-sizing: auto; */
+  font-size: 2.125rem;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  margin: 1.5rem 0 1.5rem 0;
+}
+.app-subtitle {
+  font-family: var(--secondary-font);
+  font-size: 1.125rem;
+  /* font-weight: 400; */
+  line-height: 1.5rem;
+  margin: 0 0 2.5rem 0;
+}
+@media screen and (max-width: 300px) {
+  .app-title {
+    font-size: 10vw;
+  }
+  .app-subtitle {
+    font-size: 6vw;
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 100%;
+  width: 600px;
 }
