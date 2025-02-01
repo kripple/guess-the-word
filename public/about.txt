@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Sour Gummy
+- Font Title: Oldenburg
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/sourgummy/v1/8AtGGs2gPYuNDii97MjjBrLbYfdJvDU5AZfP5opPVCC4oC5ANR1NwcNU91CMD2tcoQ.ttf
+- Font Source: https://fonts.gstatic.com/s/oldenburg/v22/fC1jPY5JYWzbywv7c4V6UU6oXyndrw.ttf
 - Font License: undefined)
