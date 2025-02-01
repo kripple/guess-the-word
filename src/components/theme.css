@@ -90,6 +90,7 @@ html[data-theme='light'],
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
   margin: 32px 0;
   padding: 12px;
