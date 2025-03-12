@@ -52,7 +52,6 @@ export function Theme({ children }: { children: ReactNode }) {
             htmlFor={themeCheckboxId}
             id="theme-toggle-label"
             onKeyDown={onKeyDown}
-            role="button"
             tabIndex={0}
           >
             <label className="theme-icon-label">Light</label>
