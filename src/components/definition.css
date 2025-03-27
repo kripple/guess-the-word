@@ -1,4 +1,4 @@
-.word-data {
+.definition {
   display: flex;
   flex-direction: column;
   height: calc-size(auto, size);

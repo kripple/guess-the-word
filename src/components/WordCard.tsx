@@ -27,7 +27,9 @@ export function WordCard({
           ),
         )}
       </h3>
-      {word ? <Definition onError={onError} win={win} word={word} /> : null}
+      {word ? (
+        <Definition onError={onError} showDefinition={win} word={word} />
+      ) : null}
     </section>
   );
 }
