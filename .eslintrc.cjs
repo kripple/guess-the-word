@@ -22,7 +22,7 @@ const warnings = {
 
 const errors = {
   '@typescript-eslint/consistent-type-imports': 'error',
-  'react/jsx-no-bind': 'error',
+  'react/jsx-no-bind': ['error', { ignoreDOMComponents: true }],
   'react/jsx-no-constructed-context-values': 'error',
   'react/jsx-no-leaked-render': 'error',
   'react/no-object-type-as-default-prop': 'error',
